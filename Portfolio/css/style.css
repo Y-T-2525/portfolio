@@ -1,0 +1,428 @@
+@charset "UTF-8";
+/* 全体 */
+body {
+   font-family: "Poppins", 
+    "Noto Sans Japanese", 
+    YuGothic, 
+    "-apple-system", 
+    "Helvetica Neue", 
+    Meiryo, 
+    sans-serif;
+    color: #2C363A;
+    background-color: #f7f9f6;
+    letter-spacing: 1px;
+}
+.container {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 75px 15px 0 15px;
+}
+/* 文字の大きさ設定 */
+.txtxs {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+.txts {
+    font-size: 16px;
+    font-weight: 300;
+}
+.txtm {
+    font-size: 20px;
+    font-weight: 600;
+}
+.txtl {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* header */
+header {
+    width: 100%;
+    max-width: 100%;
+}
+.h-inner {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    opacity: 0.7;
+    background-color: #f7f9f6;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.navbar {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px;
+    text-align: right;
+    color: #000000;
+    transition: .8s;
+}
+.navbar ul {
+    color: #000000;
+    padding: 20px 0 20px 0;
+}
+.navbar li {
+    display: inline;
+    margin-right:50px;
+}
+.navbar li:last-child {
+    margin-right: 0;
+}
+.navbar a {
+    z-index: 10;
+    font-weight: 600;
+}
+.navbar li a:hover {
+    opacity: 0.5;
+    transition: opacity .5s;
+}
+.navbar-open {
+    display: none;
+}
+.navbar-close {
+    display: none;
+}
+.spnav {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity.8s;
+    height: 0;
+}
+/* contents */
+#contents {
+    max-width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+.c-innner {
+    width: 59%;
+    max-width: 59%;
+    height: auto;
+    background-color: #f7f9f6;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+#contents h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    color: #000000;
+}
+#contents h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+    background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+}
+#contents h2 {
+    margin-bottom: 5px;
+}
+#contents p {
+    margin-bottom: 20px;
+}
+
+/* about me */
+#about {
+    overflow: hidden;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+#about h1 {
+    width: 50%;
+    margin:0 auto 50px auto;
+    text-align: center;
+    color: #000000;
+    z-index: 100;
+}
+#about h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(0, 204, 102), transparent);
+    background: linear-gradient(to right, rgb(0, 204, 102), transparent);
+}
+#about h2 {
+    margin-bottom: 5px;
+}
+#about p {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+#about p:nth-of-type(n+3) {
+    margin-bottom: 10px;
+}
+#about p:nth-of-type(6) {
+    margin-bottom: 20px;
+}
+.photo {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    text-align: center;
+    float: left;
+}
+.photo img {
+    border: 0.5px solid #777777;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.profile {
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+    max-width: 50%;
+    margin: 0 auto;
+    float: right;
+}
+.icon-margin {
+    margin: 0 5px;
+}
+.prof-photo {
+    text-decoration: underline;
+}
+/* スマホ用の説明文を非表示 */
+.photo-info-sp {
+    display: none;
+}
+/* fontawesmoreの色設定 */
+/* 料理 */
+.fa-utensils {
+    color:#dccb18;
+}
+/* DIY */
+.fa-wrench {
+    color:#19448e;
+}
+/* ボディメイク */
+.fa-diagnoses {
+    color: #a22041;
+}
+/* ポップアップアイコン */
+.fa-file-import {
+    color: #333333;
+} 
+
+
+/* skils */
+#skils {
+    clear: both;
+    text-align: center;
+    margin-bottom:50px;
+}
+#skils h1 {
+    width: 50%;
+    margin:0 auto 50px auto;
+    color: #000000;
+}
+.webskils h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(0, 104, 183), transparent);
+    background: linear-gradient(to right, rgb(0, 104, 183), transparent);
+}
+.designskils h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(127, 17, 132), transparent);
+    background: linear-gradient(to right, rgb(127, 17, 132), transparent);
+}
+#skils h2 {
+    margin-bottom: 10px;
+}
+#skils p {
+    text-align: left;
+    margin: 0 20px 5px 20px;
+}
+#skils section {
+    width: 31%;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+#skils section:nth-of-type(3n) {
+    margin-right: 0;
+}
+#skils section:nth-of-type(n+4) {
+    margin-top: 20px;
+}
+#skils img {
+    width: 52%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.webskils {
+    overflow: hidden;
+    margin-bottom:50px;
+}
+.webskils img {
+    border: 0.5px solid #777777;
+}
+
+/* 習得度の星マークの設定 spanタグの％指定を変更すれば星の数を変更可能
+星1＝11％ 星2=23% 星3=33% 星4=44% 星5=55% */
+.star-rating {
+    position: relative;
+    display:inline-block;
+    font-weight: 300;
+}
+.star-rating .star-rating-item{
+    position:absolute;
+    overflow: hidden;
+}
+.star-rating .star-rating-item:before{
+    content:"★★★★★";
+    color: #ffcc33;
+}
+.star-rating:after {
+    content:"★★★★★";
+    color: #ccc;
+}
+
+/* works */
+.worksbox {
+    padding-top: 40px;
+    background-color:#f0f0f0;
+}
+#works {
+    text-align: center;
+}
+#works h1 {
+    width: 50%;
+    margin:0 auto 20px auto;
+    text-align: center;
+    color: #000000;
+}
+#works h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(252, 200, 0), transparent);
+    background: linear-gradient(to right, rgb(252, 200, 0), transparent);
+} 
+#works h3 {
+    margin-bottom: 10px;
+}
+#works li {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+#works li:nth-of-type(3n) {
+    margin-right: 0;
+}
+#works img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #999999;
+}
+/* 作品画像のマスク */
+#works li .caption {
+    text-align: left;
+	color: #fff;
+	padding-top: 50px;
+	padding-left: 0px;
+}
+#works li .mask {
+	width: 90%;
+	height: 75%;
+	position: absolute;
+	top: 28px;
+	left: 0;
+	opacity: 0;	/* マスクを表示しない */
+	background-color: rgba(0,0,0,0.6);
+	-webkit-transition:	all 0.6s ease;
+	transition:	all 0.6s ease;
+}
+#works li:hover .mask {
+	opacity: 1;	/* マスクを表示する */
+	padding-left: 60px;	/* pxを増やすと右にずらす */
+}
+.readmore {
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: rgb(255, 255, 255, 0.1);
+    transition: opacity 0.3s;
+}
+.readmore:hover {
+    opacity: 0.7;
+}
+
+/* works(各リンクページの設定) */
+.works_link {
+    text-align: center;
+}
+.works_link h1 {
+    margin-bottom: 30px;
+}
+.works_link h2 {
+    margin-bottom: 30px;
+}
+.works_main {
+    margin-bottom: 30px;
+}
+.works_main img {
+    width: 55%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #777777;
+}
+.works_caption {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    line-height: 1.5;
+    position: relative;
+    padding-bottom: 200px;
+}
+.works_caption a {
+    text-decoration: underline;
+}
+.works_caption::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 150px;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+/* footer*/
+footer {
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+/* 覚え書き 
+〇各コンテンツのマージン、PC 50px tablet 30px SP 15px
+〇段落下のマージン、20px
+〇両端のパディング、15px
+〇文字の色、#333333
+〇見出しの線の長さを揃えるために、各h1にwidth:50%;を指定（contents以外）
+〇習熟度のスターマークは設定未完、、、現状での変更の数値はｃｓｓに記載
+〇
+〇
+*/
