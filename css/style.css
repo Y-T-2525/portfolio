@@ -90,6 +90,7 @@ header {
     visibility: hidden;
     transition: opacity.8s;
     height: 0;
+    z-index: 999;
 }
 /* contents */
 #contents {
