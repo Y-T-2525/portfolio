@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>たべハピ | レシピ検索</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="icon" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/cfdb7960b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="h-innner">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="FSH"></a></div>
+            <div class="chatch_copy txts"><p>質問に3つ答えるだけで、その日の気分に合ったおススメのダイエットメニューをご提案します。<br class="brsp">
+                <a href="#">「レシピ」</a>メニューよりどうぞ♪</p></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul class="navigater-pc txtm">
+                <li><a href="recipe_1.html"><i class="fas fa-utensils"></i> レシピ </a></li>
+                <li><a href="library.html"><i class="fas fa-book-open"></i> 知識識紹 </a></li>
+                <li><a href="food.html"><i class="fas fa-fish"></i> 食品の提案 </a></li>
+                <li><a href="corporation.html"><i class="far fa-building"></i> 会社案内 </a></li>
+                <li><a href="contact.html"><i class="far fa-envelope"></i> お問い合わせ </a></li>
+            </ul>
+
+            <div class="menu-btn"><i class="fa fa-bars"></i></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            
+            <ul class="navigater-sp">
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="recipe_1.html"><i class="fas fa-utensils"></i> レシピ </a></li>
+                <li><a href="library.html"><i class="fas fa-book-open"></i> 知識紹介 </a></li>
+                <li><a href="food.html"><i class="fas fa-fish"></i> 食品の提案 </a></li>
+                <li><a href="corporation.html"><i class="far fa-building"></i> 会社案内 </a></li>
+                <li><a href="contact.html"><i class="far fa-envelope"></i> お問い合わせ </a></li>
+            </ul>
+        </nav>
+
+        <div class="recipe">
+            <div class="question"></div>
+                <div class="recipe-nav">
+                    <div class="answer-wrap"><img src="images/hukidashi.png">
+                        <div class="txtm answer">
+                            <p>今日のあなたにおススメのメニューは...<br>
+                                <span id="answer" class="txtl">〇〇〇</span>です♪</p>     
+                        </div>
+                    </div>
+                    <img  class="nav-rabit" src="images/usagi.png" alt="rabit">
+                </div>
+            <div class="recipe-link">
+                <img src="images/nav_rabbit.png" alt="">
+                <a id="link" class="btn btn-malformation" href="https://delishkitchen.tv/" target=”_blank”>レシピを見る<br>
+                <span class="txtxs">※外部サイトに移動します</span></a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="txts">Copyright &copy; 2020-2021 FSH inc. All Rights Reserved.</p>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/answer.js"></script>
+</body>
+</html>

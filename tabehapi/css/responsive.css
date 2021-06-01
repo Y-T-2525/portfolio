@@ -1,0 +1,407 @@
+@charset "utf-8";
+
+/* タブレット対応 */
+@media (max-width: 1190px) {
+/* 文字の大きさ */
+    .txtxs {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0;
+    }
+    .txts {
+    font-size: 14px;
+    font-weight: 400;
+    }
+    .txtm {
+    font-size: 16px;
+    font-weight: 600;
+    }
+    .txtl {
+    font-size: 24px;
+    font-weight: 600;
+    }
+
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+ /* 文字の大きさ */
+     .txtxs {
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0;
+    }
+    .txts {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .txtm {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .txtl {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .container {
+        max-width: 97%;
+    }
+    /* 下線の設定 */
+    h1 {
+        border-bottom: 1px solid #777777;
+    }
+    h2::before {
+        width:12px;
+        height:1px;
+        top:50%;
+        left: -20px;
+    }
+    h2::after {
+        width:12px;
+        height:1px;
+        top:50%;
+        right: -20px;
+    }
+    .brsp {
+        display: none;
+    }
+
+    /* header */
+    .h-innner {
+        padding: 5px;
+    }
+    .logo {
+        float: none;
+        padding: 10px 0 10px 5px;
+    }
+    .logo img {
+        width: 80px;
+        height: auto;
+    }
+    .chatch_copy {
+        float: none;
+        padding-top: 0px;
+    }
+
+    /* ハンバーガーメニュー */
+    .navigater-pc {
+        display: none;
+    }
+    .nav {
+        position: relative;
+    }
+    .menu-btn{
+        position: fixed;
+        top: 5px;
+        right: 20px;
+        z-index: 2;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f9f9f9;
+        color: #777777;
+        border-radius: 5px;
+    }
+    .menu-btn.is-active{
+        display: none;
+    }
+    .close-btn.is-active{
+        position: fixed;
+        top: 5px;
+        right: 20px;
+        z-index: 2;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f9f9f9;
+        color: #777777;
+        border-radius: 5px;
+    }
+    .navigater-sp.is-active{
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        transform: translateX(0);
+    }
+    footer {
+        padding: 10px 0;
+    }
+
+    /* スマホ用レシピリンク */
+    .sp-recipe {
+        display: block;
+    }
+
+    /* トップページ */
+    .mainvisual {
+        margin-top: 10px;
+    }
+    .news {
+        margin: 5px 0 5px 0;
+    }
+    .news h1 {
+        margin-bottom: 5px;
+        padding: 10px 0 10px 5px;
+    }
+    .news ul {
+        font-weight: 400;
+        padding: 5px 10px;
+    }
+    .news li {
+        line-height: 1.5em;
+        padding: 5px 0 5px 0;
+        border-top: 2px dotted #777777;
+    }
+
+    /* library（section部分はcorporationと共通）*/
+    .library {
+        padding: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .library h1 {
+        margin: 10px 0;
+        padding: 0px;
+    }
+    .library h2 {
+        margin-bottom: 10px;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+    section:last-child {
+        padding: 0;
+        margin-bottom: 0px;
+    }
+    .sec1 {
+        padding: 0px;
+    }
+    .sec1 img {
+        float: none;
+    }
+    .sec1 p {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .sec2 {
+        padding: 0px;
+    }
+    .sec2 img {
+        float: none;
+    }
+    .sec2 p {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .sec3 {
+        padding: 0px;
+    }
+    .sec3 img {
+        float: none;
+    }
+    .sec3 p {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .caption {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .caption p {
+        font-size: 10px;
+    }
+    /* corporation */
+    .corporation {
+        padding: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .corporation h1 {
+        margin: 10px 0;
+        padding: 0px;
+    }
+    .corporation h2 {
+        margin-bottom: 10px;
+    }
+    .corporation img {
+        width: 30%;
+    }
+
+    /* food */
+    .food {
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .food h1 {
+        margin: 10px 0 20px 0;
+        padding: 0px;
+    }
+    .food h3 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .bad_food {
+        margin-bottom: 10px;
+    }
+    .bad_food li{
+        width: 48%;
+        margin-bottom: 10px;
+    }
+    .bad_food li p {
+        width: 80%;
+    }
+    .good_food {
+        margin-bottom: 10px;
+    }
+    .good_food li{
+        width: 48%;
+        margin-bottom: 10px;
+    }
+    .good_food li p {
+        width: 80%;
+    }
+
+    /* contact */
+    .contact {
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .contact h1 {
+        margin: 10px 0 20px 0;
+        padding: 0px;
+    }
+    .contact p {
+        margin-bottom: 10px;
+    }
+    .required {
+        margin-left:5px;
+    }
+    .free {
+        margin-left: 5px;
+    }
+    .radio {
+        margin-bottom: 15px;
+    }
+    input[type="text"] {
+        width: 70%;
+    }
+    input[type="email"] {
+        width: 70%;
+    }
+    textarea {
+        width: 70%;
+        height: 150px;
+        margin-bottom: 0px;
+    }
+    button a {
+        width: 200px;
+        padding: 10px 50px;
+    }
+
+    /* thanks */
+    .thanks {
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .thanks_comment p {
+        font-size: 12px;
+    }
+
+    /* recipe */
+    .recipe {
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .recipe h1 {
+        margin-bottom: 20px;
+    }
+    .question {
+        margin-bottom: 50px;
+    }
+    .question-box,.question-box-3 {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 80px;
+        margin-top: 70px;
+    }
+    .question-box button {
+        width: 34%;
+    }
+    .question-box-3 button {
+        width: 30%;
+    }
+    button img {
+        width: 70%;
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+    /* 吹き出し */
+    .question-wrap img {
+        width: 100%;
+        max-width: 100%;
+        min-height: 75px;
+    }
+    .answer-wrap img {
+        min-height: 70px;
+    }
+    /* 中吹き出し */
+    .recipe-nav::before {
+        bottom: -20px;
+        right: 85px;
+        width: 20px;
+        height: 15px;
+    }
+    /* 小吹き出し */
+    .recipe-nav::after { 
+        bottom: -25px;
+        right: 60px;
+        width: 15px;
+        height: 15px;
+    }
+    /* うさぎ */
+    .nav-rabit {
+        width: 70px;
+        height: auto;
+        bottom: -70px;
+        right: 0px;
+    }
+    .recipe-link {
+        padding-top: 60px;
+    }
+    .recipe-link img {
+        width: 90px;
+        height: auto;
+    }
+    .btn,
+    a.btn,
+    button.btn {
+        font-size: 1.4rem;
+        padding: 2rem 2rem;
+    }
+    a.btn-malformation {
+    padding: 2rem 2rem;
+    }
+    #answer.show {
+        font-size: 14px;
+    }
+    .answer {
+        font-size: 1px;
+    }
+    .answer.show {
+        font-size: 12px;
+    }
+}
