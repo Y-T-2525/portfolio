@@ -28,7 +28,7 @@ $(function() {
             headrOpacity.css('opacity','0.7');
         }
 
-        if ($(this).scrollTop() > 850){
+        if ($(this).scrollTop() > 1000){
             headrOpacity.css('opacity','0.7');
         } 
     });
